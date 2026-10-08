@@ -9,8 +9,8 @@ class ExamplePage(BasePage):
     path = "/"
 
     @property
-    def heading(self):
-        return self.page.get_by_role("heading", name="Example Domain")
+    def description(self):
+        return self.page.get_by_text("This domain is for use in documentation examples")
 
 
 @pytest.mark.e2e
@@ -18,4 +18,4 @@ class ExamplePage(BasePage):
 def test_example_domain_is_reachable(page: Page, settings: Settings) -> None:
     example = ExamplePage(page, str(settings.web_base_url))
     example.open()
-    expect(example.heading).to_be_visible()
+    expect(example.description).to_be_visible()
