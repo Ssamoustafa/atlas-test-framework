@@ -1,0 +1,8 @@
+services:
+  tests:
+    build: .
+    environment:
+      ATLAS_ENV: ci
+    volumes:
+      - ./artifacts:/work/artifacts
+      - ./allure-results:/work/allure-results

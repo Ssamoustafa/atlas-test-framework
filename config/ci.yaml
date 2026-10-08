@@ -1,0 +1,10 @@
+web_base_url: https://example.com
+api:
+  base_url: https://jsonplaceholder.typicode.com
+  timeout_seconds: 10
+browser:
+  name: chromium
+  headless: true
+  timeout_ms: 15000
+  viewport_width: 1440
+  viewport_height: 900
