@@ -34,7 +34,9 @@ def browser(playwright_instance: Playwright, settings: Settings) -> Generator[Br
 
 
 @pytest.fixture
-def page(browser: Browser, settings: Settings, request: pytest.FixtureRequest) -> Generator[Page, None, None]:
+def page(
+    browser: Browser, settings: Settings, request: pytest.FixtureRequest
+) -> Generator[Page, None, None]:
     context: BrowserContext = browser.new_context(
         viewport={
             "width": settings.browser.viewport_width,
