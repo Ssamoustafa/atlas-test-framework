@@ -1,9 +1,4 @@
-from typing import TypeVar
-
-T = TypeVar("T")
-
-
-def assert_that(actual: T, expected: T, message: str | None = None) -> None:
+def assert_that[T](actual: T, expected: T, message: str | None = None) -> None:
     if actual != expected:
         detail = message or f"Expected {expected!r}, got {actual!r}"
         raise AssertionError(detail)
