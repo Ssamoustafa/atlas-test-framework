@@ -126,6 +126,9 @@ A scheduled workflow demonstrates a separate regression cadence rather than forc
 - [ADR 002 — Browser context per test](docs/adr/002-test-isolation.md)
 - [ADR 003 — Page/component model](docs/adr/003-page-component-model.md)
 - [ADR 004 — Retry policy](docs/adr/004-retry-policy.md)
+- [API testing](docs/api-testing.md)
+- [API contract testing](docs/api-contract-testing.md)
+- [Performance testing with JMeter](docs/performance-testing-jmeter.md)
 
 ## Roadmap
 
